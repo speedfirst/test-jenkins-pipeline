@@ -1,14 +1,14 @@
 #!groovy
 node {
-  stage('Build') { // <2>
+  stage('Load Funds') { // <2>
         /* .. snip .. */
        echo 'build...'
     }
-    stage('Test') {
+    stage('Calc Fund Nav') {
         /* .. snip .. */
        echo 'test'
     }
-    stage('Deploy') {
+    stage('Merge Fund Announcements') {
         /* .. snip .. */
        echo 'deploy'
     }
