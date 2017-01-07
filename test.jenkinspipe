@@ -1,5 +1,15 @@
 #!groovy
-
 node {
-  echo "Hello World"
+  stage('Build') { // <2>
+        /* .. snip .. */
+       echo 'build...'
+    }
+    stage('Test') {
+        /* .. snip .. */
+       echo 'test'
+    }
+    stage('Deploy') {
+        /* .. snip .. */
+       echo 'deploy'
+    }
 }
